@@ -1,0 +1,27 @@
+Proje 2
+[16,21,11,8,12,22] -> Merge Sort
+
+1.Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+2.Big-O gösterimini yazınız.
+
+
+1. 
+       1.                 [16,21,11,8,12,22]
+       2.           [16,21,11]                     [8,12,22]
+       3.       [16,21]      [11]               [8,12]     [22]
+       4.    [16]    [21]      [11]           [8]    [12]       [22]
+       5.       [16,21]       [11]               [8,12]        [22]
+       6.           [11,16,21]                       [8,12,22]
+       7.                     [8,11,12,16,21,22]
+
+   İlk olarak dizi ortadan ikiye ayrılır. Dizi Çift sayılı elaman sayısına sahip ise herhangi bir taraf +1 elaman olacak şekilde ayrım yapılabilir(logn).
+   Daha sonraki adımlarda aynı işlem tek elaman kalana dek yapılır.
+   Elemanlar yalnız kadılktan sonra tarflardaki en soldaki elamanlar(en küçük) tek tek karşılaştırma yapılarak sıralı birleştirilir(n).
+2. O(nlogn)
+  Ayrım sürecinde yarı yarıya kontrol azaldığından O(logn)
+  Birleşim sürecinde bire bir karşılaştırma olduğundan O(n)
+  Genel durumda Big O Notation: O(nlogn) olur.
+
+     
+
+	
