@@ -1,0 +1,25 @@
+Aşağıdaki sorgu senaryolarını dvdrental örnek veri tabanı üzerinden gerçekleştiriniz.
+
+1 city tablosu ile country tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+2 customer tablosu ile payment tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+3 customer tablosu ile rental tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+
+
+
+
+1-
+SELECT * FROM city ci
+INNER JOIN country co
+ON ci.country_id = co.country_id;
+
+
+2-
+SELECT cu.first_name, cu.last_name, pa.payment_id FROM customer cu
+INNER JOIN payment pa
+ON cu.customer_id = pa.customer_id;
+
+3-
+SELECT cu.first_name, cu.last_name, re.customer_id FROM customer cu
+INNER JOIN rental  re
+ON cu.customer_id = re.customer_id;
+
