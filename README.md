@@ -1,3 +1,5 @@
 ## PatikaDev-Deniz_Training
 
-# Patikadev üzerinden verilen modül projelerini içermektedir.
+# It includes module projects given over Patikadev.
+
+Link: https://www.patika.dev/tr
